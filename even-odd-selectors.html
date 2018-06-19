@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+	<style type="text/css">
+		.table, .table tr, .table td{
+			border: 1px solid #000;
+		}
+
+		.marker {
+			background-color: yellow;
+		}
+
+	</style>
+
+<table class="table">
+	<tr> 
+		<td>Data 1</td>
+	</tr>
+	<tr> 
+		<td>Data 2</td>
+	</tr>
+	<tr> 
+		<td>Data 3</td>
+	</tr>
+
+	<tr> 
+		<td>Data 1</td>
+	</tr>
+	<tr> 
+		<td>Data 2</td>
+	</tr>
+	<tr> 
+		<td>Data 3</td>
+	</tr>
+
+
+	<tr> 
+		<td>Data 1</td>
+	</tr>
+	<tr> 
+		<td>Data 2</td>
+	</tr>
+	<tr> 
+		<td>Data 3</td>
+	</tr>
+
+
+
+</table>
+
+
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+
+<script type="text/javascript">
+	$('.table tr:even').addClass('marker');
+</script>
+    
+</body>
+</html>

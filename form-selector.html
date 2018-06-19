@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<form>
+	<label> Enter Full Name</label>
+	<br/>
+	<input type="text">
+
+	<br/>
+	
+	<label> Enter Email</label>
+	<br/>
+	<input type="text">
+
+	<br/>
+
+	<input type="button" name="" value="Submit Form" id="Submit">
+</form>
+
+
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+
+<script type="text/javascript">
+	
+	$(':text').focusin(function(){
+		$(this).css({
+			'border' : '2px solid yellow',
+		})
+	});
+
+	$(':text').blur(function(){
+		$(this).css({
+			'border' : '1px solid #000',
+		})
+	});
+
+	$('#Submit').click(function(){
+		$(this).attr('disabled', 'disabled');
+		$(this).attr('value', 'please wait..');
+	})
+
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+
+<button id="btn"> Click me</button>
+
+<script type="text/javascript" src="assets/jquery.js"></script>
+
+<script>
+	/*
+	$(document).ready(function(){
+		alert('Jquery test Completed');
+	});
+
+	*/
+
+
+	var name = 'string';
+	var integer = 30;
+	var bolean = true;
+
+	console.log(name);
+	console.log(integer);
+	console.log(bolean);
+
+
+	function nameOffunction(){
+		return alert(name);
+	}
+
+/*	document.getElementById('btn').addEventListener('click', function(){
+		return alert(bolean);
+	});
+*/
+
+	document.getElementById('btn').addEventListener('click', nameOffunction);
+
+</script>
+</body>
+</html>
